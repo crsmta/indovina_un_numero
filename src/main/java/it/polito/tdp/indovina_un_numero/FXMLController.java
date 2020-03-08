@@ -2,24 +2,18 @@ package it.polito.tdp.indovina_un_numero;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 
-public class FXMLController implements Initializable {
-    
+public class FXMLController {
+
     @FXML
-    private Label label;
-    
+    private ResourceBundle resources;
+
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private URL location;
+
+    @FXML
+    void initialize() {
+
     }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
 }
